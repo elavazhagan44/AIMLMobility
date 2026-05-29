@@ -36,28 +36,31 @@ added_dist = current_speed * (gap_seconds / 3600)
 
 # Automation Pipeline Flowchart Diagram
 
-  [ START: Raw Journey Video Stream ]
-                  │
-                  ▼
-  [ Temporal Frame Sampling: 30s Steps ]
-                  │
-                  ▼
-  [ Isolate Dashboard Speedometer via Boundary Mask ]
-                  │
-                  ▼
-  [ Apply Grayscale & High-Pass Binary Thresholding ]
-                  │
-                  ▼
-  [ Execute Optical Character Recognition (EasyOCR) ]
-                  │
-                  ▼
-  [ Apply Contextual Filter Rules to Clear Character Spikes ]
-                  │
-                  ▼
-  [ Compute Cumulative Trip Distance via Numerical Integration ]
-                  │
-                  ▼
-  [ END: Export Tracking CSV & Generate Diagnostic Plots ]
+4. Automation Pipeline Flowchart Diagram
+
+```text
+[ START: Raw Journey Video Stream ]
+                │
+                ▼
+[ Temporal Frame Sampling: 30s Steps ]
+                │
+                ▼
+[ Isolate Dashboard Speedometer via Boundary Mask ]
+                │
+                ▼
+[ Apply Grayscale & High-Pass Binary Thresholding ]
+                │
+                ▼
+[ Execute Optical Character Recognition (EasyOCR) ]
+                │
+                ▼
+[ Apply Contextual Filter Rules to Clear Character Spikes ]
+                │
+                ▼
+[ Compute Cumulative Trip Distance via Numerical Integration ]
+                │
+                ▼
+[ END: Export Tracking CSV & Generate Diagnostic Plots ]
 
 # Model Evaluation, Analytics & Error Calculations (Sub-task 6)
 The automated Python architecture processed the timeline up to 1290 seconds, tracking the vehicle's dynamic acceleration profiles and exporting the final data deliverables.
